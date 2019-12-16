@@ -1,7 +1,7 @@
 class Triangle
   class TriangleError < StandardError
     def message
-      "Lengths provided are invalid"
+      "Lengths provided are invalid."
     end
   end
   attr_accessor :length1, :length2, :length3

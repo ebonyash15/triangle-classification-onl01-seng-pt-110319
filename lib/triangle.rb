@@ -5,7 +5,7 @@ class Triangle
     @length2=length2
     @length3=length3
   end
-  class TriangeError < StandardError
+  class TriangleError < StandardError
     def message
       "Lengths provided are invalid"
     end

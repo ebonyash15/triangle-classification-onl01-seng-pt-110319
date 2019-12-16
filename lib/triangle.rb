@@ -1,10 +1,10 @@
 class Triangle
-  attr_accessor length1:, length2:, length3:
+  attr_accessor :length1, :length2, :length3
   @lengths=[]
   def initialize(length1:, length2:, length3:)
-    @lengths<<length1:
-    @lengths<<length2:
-    @lengths<<length3:
+    @lengths<<:length1
+    @lengths<<:length2
+    @lengths<<:length3
   end
   class TriangeError < StandardError
     def message

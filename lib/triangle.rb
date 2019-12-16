@@ -12,7 +12,7 @@ class Triangle
   end
   def kind
     if (@length1>0&&@length2>0&&@length3>0)&&(@length1+@length2>@length3)
-      if @length1==@length2 && @length2=@length3
+      if @length1==@length2&&@length2==@length3
         :equilateral
       elsif @length1==@length2 || @length2==@length3 || @length1==@length3
         :isosceles

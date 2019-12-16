@@ -9,9 +9,12 @@ class Triangle
     @length3=length3
   end
   def legal?
-    @
+    (@length1>0&&@length2>0&&@length3>0)&&
+    (@length1+@length2>@length3)&&
+    (@length2+@length3>@length1)&&
+    (@length3+@length1>@length2)
   def kind
-    if self.legal? == true
+    if self.legal?
       if @length1==@length2&&@length2==@length3
         :equilateral
       elsif @length1==@length2 || @length2==@length3 || @length1==@length3

@@ -1,8 +1,6 @@
 class Triangle
   class TriangleError < StandardError
-    def message
-      "Lengths provided are invalid."
-    end
+    p "Lengths provided are invalid."
   end
   attr_accessor :length1, :length2, :length3
   def initialize(length1, length2, length3)
@@ -20,11 +18,7 @@ class Triangle
         :scalene
       end
     else
-      begin
         raise TriangleError
-      rescue TriangleError => error
-        puts error.message
-      end
     end
   end
 end

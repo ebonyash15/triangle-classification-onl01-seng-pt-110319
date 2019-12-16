@@ -1,10 +1,10 @@
 class Triangle
   attr_accessor :length1, :length2, :length3
   @lengths=[]
-  def initialize(length1:, length2:, length3:)
-    @lengths<<:length1
-    @lengths<<:length2
-    @lengths<<:length3
+  def initialize(length1, length2, length3)
+    @lengths<<length1
+    @lengths<<length2
+    @lengths<<length3
   end
   class TriangeError < StandardError
     def message
@@ -13,9 +13,9 @@ class Triangle
   end
   def kind
     if (@lengths.each {|l| l>0})&&(@lengths[0]+@lengths[1]>@lengths[2])
-      if length1==length2 &&length2==length3
+      if @lengths[0]==@lengths[1] && @lengths[2]==@lengths[1]
         :equilateral
-      elsif length1==length2 ||length2==length3
+      elsif @length[0]==@length[1] || @length[1]==@length[2]
         :isosceles
       else
         :scalene

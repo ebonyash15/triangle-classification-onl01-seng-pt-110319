@@ -21,8 +21,8 @@ class Triangle
       end
     else
       begin
-        raise TrialngleError
-      rescue TrialngleError => error
+        raise TriangleError
+      rescue TriangleError => error
         puts error.message
       end
     end

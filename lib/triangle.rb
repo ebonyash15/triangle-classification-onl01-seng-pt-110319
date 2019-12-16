@@ -13,6 +13,7 @@ class Triangle
     (@length1+@length2>@length3)&&
     (@length2+@length3>@length1)&&
     (@length3+@length1>@length2)
+  end
   def kind
     if self.legal?
       if @length1==@length2&&@length2==@length3
